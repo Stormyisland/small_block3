@@ -62,6 +62,8 @@ new_block = Block(insex=last_block.hash)
 class wallet:
   def __init__(self):
     (self.public_key, self.privat_key) = rsa.newkeys(512)
+
+  def sign_transaction(self.transaction): 
    
   
   
