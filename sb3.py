@@ -14,3 +14,14 @@ class Block:
         self.previous_hash = previous_hash
         self.nonce = nonce
         self.hash = self.compute_hash()
+  def compute_hash(self):
+      block_string = json.dumps(sel.__dict__, sort_keys=True)
+      return hashlib.sha256(block_string.encode()).hexdigest()
+class Blockchain:
+  difficuty = 2
+  reward = 10
+  def __int__(self):
+    self.unconfermed_transactions = []
+    self.chain =[]
+    self.create_genesis_block()
+  def 
